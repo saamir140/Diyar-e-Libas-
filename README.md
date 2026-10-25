@@ -25,3 +25,10 @@ TESTING NOTE: For this prototype, the former Bilal Fabrics / Wash & Wear image a
 - `wash-wear.html` — Wash & Wear category page with 8 supplier photo samples.
 - `legend-winter-cotton.html` — Legend Winter Cotton category page with 7 supplier photo samples.
 Homepage category buttons now link to these pages. Technical product claims remain marked for verification.
+
+
+## Individual product detail pages (testing)
+Each supplier photo sample has its own detail page. Pages use sample numbers only; colour names, stock/SKUs, fabric length, composition, care, delivery terms and checkout remain unverified/unconnected.
+
+Wash & Wear: wash-wear-sample-01.html, wash-wear-sample-02.html, wash-wear-sample-03.html, wash-wear-sample-04.html, wash-wear-sample-05.html, wash-wear-sample-06.html, wash-wear-sample-07.html, wash-wear-sample-08.html
+Legend Winter Cotton: legend-winter-cotton-sample-01.html, legend-winter-cotton-sample-02.html, legend-winter-cotton-sample-03.html, legend-winter-cotton-sample-04.html, legend-winter-cotton-sample-05.html, legend-winter-cotton-sample-06.html, legend-winter-cotton-sample-07.html
