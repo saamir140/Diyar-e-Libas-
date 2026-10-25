@@ -1,29 +1,20 @@
-# Diyar-e-Libas — CRO Website Concept v3
+# Diyar-e-Libas — CRO Prototype V5
 
-This is a static front-end testing prototype based on the competitor audit findings. Supplier-provided product images, current product names and prices are retained as the working content for testing.
+A premium, conversion-focused front-end prototype for the Diyar-e-Libas men's unstitched fabric store.
 
-## Design decisions implemented
-- Calm premium palette: deep ink, muted olive, warm ivory and stone. No red theme.
-- Single dominant hero visual, headline, supporting copy and one primary CTA.
-- Two product cards with clear prices and a simple sample-image selector.
-- A fabric education section and side-by-side comparison table.
-- A visible unstitched-fabric clarity notice near the buying information.
-- Clear section hierarchy, responsive mobile layout, sticky navigation and accessible mobile menu.
-- Product image selection changes the main image to the selected supplied image sample.
+## Design direction
+- Deep ink / forest green, muted olive, warm ivory and stone — no red theme.
+- Editorial typography, generous whitespace and stronger hierarchy.
+- Clear primary calls to action and a deliberate homepage flow.
+- Product cards with current names/prices and supplier-provided image samples.
+- Fabric education section, comparison table and clear unstitched-fabric notice.
+- Responsive mobile navigation and clickable supplier photo samples.
 
-## Important: prototype, not a live store
-- For this testing phase, supplier-provided product images are intentionally retained as the working content. Confirm permission and brand presentation before public launch.
-- Image swatches use supplied image samples to test the colour-selection interaction; they are not a guarantee that every shade is currently in stock.
-- Fabric length, composition, care, weight, benefits, exact colour names and shipping fee/threshold are not verified. These are intentionally marked as pending or described without unverified claims.
-- The prototype does not accept orders, save customer details, connect Google Sheets, process payments, or include Meta Pixel. Do not use it as a live checkout.
-- The current proposed 7-day defect support needs final policy wording before launch.
+## Preview
+Open `index.html` in a browser. Keep the `css`, `js`, and `assets` folders in the same structure.
 
-## Preview locally
-Open `index.html` in a browser. For a more reliable preview, use a local static server or deploy the folder to a temporary Vercel project.
-
-## Next before launch
-1. Confirm product specs and lengths with supplier.
-2. Approve product photography/brand usage and replace supplier-branded images.
-3. Confirm colours, stock, courier, delivery threshold and policy wording.
-4. Build the real product detail and checkout flow, order recording, validation, confirmation and Meta Pixel events.
-5. Test on mobile and verify a test order end to end.
+## Important testing notes
+- Current product names, prices and supplier images are retained for testing.
+- The swatches are sample image previews, not verified colour-name/stock selectors.
+- Composition, length, care and other specifications must be verified before launch.
+- Checkout, payment processing, Google Sheets order recording, courier integration and Meta Pixel are not connected in this prototype.
