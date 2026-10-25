@@ -233,3 +233,52 @@ body{font-size:16px;line-height:1.7}
 .product-related-card span{display:block;margin-top:8px;font-size:13px}
 @media(max-width:800px){.product-detail-grid{grid-template-columns:1fr;gap:18px}.product-gallery{position:static;grid-template-columns:58px minmax(0,1fr);gap:9px}.product-thumbs{max-height:480px}.product-info{padding-top:12px}.product-detail-lower{grid-template-columns:1fr;margin-top:40px}.product-related-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product-info h1{font-size:42px}}
 @media(max-width:420px){.product-detail{padding-left:15px;padding-right:15px}.product-gallery{grid-template-columns:48px minmax(0,1fr);gap:7px}.product-main-image{padding:5px}.product-info h1{font-size:36px}.product-price{font-size:23px}.product-intro{font-size:15px}.product-sample-option{width:50px}}
+
+
+/* MOBILE UX REFINEMENT V2 — stronger hierarchy, real image presence, less card chrome */
+@media (max-width: 700px) {
+  .announcement {height:30px;font-size:9px;letter-spacing:.12em}
+  .site-header {height:76px;padding:0 18px;gap:12px}
+  .wordmark {min-width:0;flex:1}
+  .wordmark span {font-size:20px;letter-spacing:.035em}
+  .wordmark small {font-size:7px;letter-spacing:.11em}
+  .menu-toggle {font-size:14px;white-space:nowrap;gap:8px}
+  .header-link {font-size:10px;padding:10px 11px;white-space:nowrap}
+  .hero {padding:40px 20px 34px;gap:26px}
+  .hero h1,.category-hero h1 {font-size:clamp(39px,10vw,54px);line-height:1.04;letter-spacing:-.045em}
+  .hero-description,.category-hero p:not(.eyebrow) {font-size:16px;line-height:1.65}
+  .category-hero {padding:34px 20px 26px;gap:24px}
+  .category-hero-media {margin:0;max-width:none}
+  .category-hero-media img {width:100%;aspect-ratio:1/1;object-fit:cover}
+  .category-hero-media span {font-size:10px;padding-top:8px}
+  .breadcrumbs {padding:14px 20px;font-size:11px}
+  .category-products {padding:34px 20px 48px}
+  .category-products-head {display:block;margin-bottom:24px}
+  .category-products-head .eyebrow {margin-bottom:10px}
+  .category-products-head h2 {font-size:32px;line-height:1.12;margin:0 0 12px}
+  .category-products-head>p {font-size:14px;line-height:1.65;max-width:40rem}
+  .sample-grid {display:grid!important;grid-template-columns:1fr!important;gap:34px!important}
+  .sample-card {border:0!important;outline:0!important;background:transparent!important;box-shadow:none!important;padding:0!important;min-width:0}
+  .sample-card>a {display:block;width:100%;overflow:hidden;background:#efeee9}
+  .sample-card>a img {display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:center}
+  .sample-card-meta {display:flex;justify-content:space-between;gap:12px;margin:14px 0 7px;font-size:10px;letter-spacing:.08em}
+  .sample-card h3 {font-size:27px;line-height:1.2;margin:0 0 10px;max-width:22ch}
+  .sample-card>p {font-size:14px;line-height:1.65;margin:8px 0}
+  .category-variants {display:flex;gap:9px;flex-wrap:wrap;margin:16px 0 20px}
+  .category-variants .product-sample-option {width:clamp(54px,16vw,72px)!important;padding:0!important;border:1px solid #d8d8cf!important;background:transparent!important;flex:0 0 auto}
+  .category-variants .product-sample-option img {width:100%;aspect-ratio:1/1;object-fit:cover}
+  .category-variants .product-sample-option span {display:block;font-size:9px;line-height:1.25;padding:6px 2px}
+  .button {min-height:48px;padding:13px 18px;font-size:13px}
+  .site-footer {padding-left:20px;padding-right:20px}
+}
+@media (max-width: 390px) {
+  .site-header {padding:0 13px;gap:8px}
+  .wordmark span {font-size:17px}
+  .wordmark small {font-size:6px}
+  .header-link {padding:9px 8px;font-size:9px}
+  .menu-toggle {font-size:12px}
+  .hero,.category-hero {padding-left:17px;padding-right:17px}
+  .category-products {padding-left:17px;padding-right:17px}
+}
+/* Keep photos visually dominant; no oversized frames around small thumbnails */
+.sample-card img {max-width:100%}

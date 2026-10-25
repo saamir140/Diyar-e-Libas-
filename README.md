@@ -1,34 +1,15 @@
-# Diyar-e-Libas CRO Prototype V7
+# Diyar-e-Libas website prototype — single product with colour variants
 
-This is the mobile-header layout fix for the existing CRO prototype. It preserves the current supplier-provided testing content and images.
+## Structure
+- `index.html` — homepage
+- `wash-wear.html` — Wash & Wear category page
+- `wash-wear-product.html` — one Wash & Wear product page with 8 supplier photo shade options
+- `legend-winter-cotton.html` — Legend Winter Cotton category page
+- `legend-winter-cotton-product.html` — one Legend Winter Cotton product page with 7 supplier photo shade options
+- `css/style.css`, `js/main.js`, `assets/products/` — styles, interactions and supplied photos
 
-## Preview locally
-1. Extract the ZIP.
-2. Open `diyar_libas_v3/index.html` in a browser.
-
-## Update the existing GitHub repository
-Upload the extracted files and replace matching files, including `css/style.css`. Commit the changes and let Vercel redeploy.
-
-## What's fixed
-- Mobile header uses a compact grid so the wordmark, menu and collection CTA don't overlap.
-- The tagline is hidden on narrow screens to preserve room for navigation.
-- Very narrow phones use an icon-only menu label while keeping the menu button accessible by its existing control.
-- Existing desktop styles and product assets are retained.
-
-This remains a front-end prototype; checkout/order recording and tracking must be connected and tested before taking live orders.
+## Important
+Shade numbers are temporary photo labels, not official colour names or stock SKUs. Technical details such as fabric length/composition, delivery charges, stock, and return terms must be confirmed before launch. Checkout, order submission and order recording are not connected in this prototype.
 
 
-TESTING NOTE: For this prototype, the former Bilal Fabrics / Wash & Wear image assets (collection1_01.webp through collection1_08.webp) have been replaced with the seven supplier-provided Legend/printed fabric images. Product names and prices remain unchanged for layout testing only; the imagery is temporary and should not be treated as proof of product variant compatibility.
-
-
-## Category pages added
-- `wash-wear.html` — Wash & Wear category page with 8 supplier photo samples.
-- `legend-winter-cotton.html` — Legend Winter Cotton category page with 7 supplier photo samples.
-Homepage category buttons now link to these pages. Technical product claims remain marked for verification.
-
-
-## Individual product detail pages (testing)
-Each supplier photo sample has its own detail page. Pages use sample numbers only; colour names, stock/SKUs, fabric length, composition, care, delivery terms and checkout remain unverified/unconnected.
-
-Wash & Wear: wash-wear-sample-01.html, wash-wear-sample-02.html, wash-wear-sample-03.html, wash-wear-sample-04.html, wash-wear-sample-05.html, wash-wear-sample-06.html, wash-wear-sample-07.html, wash-wear-sample-08.html
-Legend Winter Cotton: legend-winter-cotton-sample-01.html, legend-winter-cotton-sample-02.html, legend-winter-cotton-sample-03.html, legend-winter-cotton-sample-04.html, legend-winter-cotton-sample-05.html, legend-winter-cotton-sample-06.html, legend-winter-cotton-sample-07.html
+Mobile UX Fix V2: improved mobile header sizing, stronger category hierarchy, full-width square product imagery, removed oversized card borders, single-column product card layout on phones, and clearer category copy. Supplier shade names remain provisional pending confirmation.
