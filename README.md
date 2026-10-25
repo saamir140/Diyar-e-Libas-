@@ -19,3 +19,9 @@ This remains a front-end prototype; checkout/order recording and tracking must b
 
 
 TESTING NOTE: For this prototype, the former Bilal Fabrics / Wash & Wear image assets (collection1_01.webp through collection1_08.webp) have been replaced with the seven supplier-provided Legend/printed fabric images. Product names and prices remain unchanged for layout testing only; the imagery is temporary and should not be treated as proof of product variant compatibility.
+
+
+## Category pages added
+- `wash-wear.html` — Wash & Wear category page with 8 supplier photo samples.
+- `legend-winter-cotton.html` — Legend Winter Cotton category page with 7 supplier photo samples.
+Homepage category buttons now link to these pages. Technical product claims remain marked for verification.
