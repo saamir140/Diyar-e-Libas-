@@ -77,3 +77,86 @@ body{font-size:16px;line-height:1.7}
  .details-grid p{font-size:12px}
  .closing-cta>p:not(.eyebrow){font-size:13px}
 }
+
+/* V7 mobile header fix: prevent wordmark, tagline, menu and CTA from overlapping */
+@media (max-width: 650px) {
+  .site-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+    column-gap: 12px;
+    height: 72px;
+    min-height: 72px;
+    padding: 0 16px;
+  }
+  .wordmark {
+    min-width: 0;
+    width: auto;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .wordmark span {
+    display: block;
+    white-space: nowrap;
+    font-size: clamp(13px, 3.4vw, 17px);
+    letter-spacing: .015em;
+    line-height: 1.15;
+  }
+  .wordmark small {
+    display: none;
+  }
+  .menu-toggle {
+    flex: none;
+    margin: 0;
+    padding: 8px 0;
+    white-space: nowrap;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+  .menu-toggle b {
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 14px;
+  }
+  .header-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    max-width: 142px;
+    min-width: 0;
+    padding: 10px 9px;
+    white-space: nowrap;
+    font-size: 9px;
+    line-height: 1.2;
+    letter-spacing: .015em;
+  }
+  .header-link span {
+    margin-left: 2px;
+  }
+  .primary-nav {
+    top: 71px;
+  }
+}
+@media (max-width: 380px) {
+  .site-header {
+    column-gap: 9px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .wordmark span {
+    font-size: 13px;
+  }
+  .menu-toggle {
+    font-size: 0;
+  }
+  .menu-toggle b {
+    font-size: 19px;
+    margin-left: 0;
+  }
+  .header-link {
+    max-width: 132px;
+    padding: 9px 7px;
+    font-size: 8px;
+  }
+}
