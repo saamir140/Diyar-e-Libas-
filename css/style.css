@@ -282,3 +282,91 @@ body{font-size:16px;line-height:1.7}
 }
 /* Keep photos visually dominant; no oversized frames around small thumbnails */
 .sample-card img {max-width:100%}
+
+/* Homepage layout refresh: lifestyle hero, stronger hierarchy, responsive inspiration */
+.announcement{background:#14281f;color:#f7f1e5;justify-content:center;gap:clamp(12px,2.5vw,34px);font-size:11px;letter-spacing:.04em;padding:10px 18px;flex-wrap:wrap}
+.announcement i{height:14px;width:1px;background:#7d897e;display:block}
+.site-header{min-height:76px;padding:14px clamp(18px,4vw,58px);gap:22px;background:#fbf8f0}
+.wordmark span{font-size:clamp(20px,2vw,26px);letter-spacing:.02em}
+.wordmark small{letter-spacing:.16em}
+.primary-nav{gap:clamp(14px,2.5vw,34px)}
+.hero-lifestyle{position:relative;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);min-height:520px;background:#17291f;overflow:hidden;color:#fff}
+.hero-lifestyle .hero-copy{z-index:2;padding:clamp(34px,5vw,72px);align-self:center;background:linear-gradient(90deg,rgba(17,34,25,.98),rgba(17,34,25,.91) 75%,rgba(17,34,25,.1));margin-right:-100px}
+.hero-lifestyle .eyebrow{color:#d5b06a;letter-spacing:.16em}
+.hero-lifestyle h1{font-size:clamp(42px,5.2vw,76px);line-height:.99;color:#fff;margin:16px 0}
+.hero-lifestyle .hero-description{color:#f1eee6;max-width:440px;font-size:clamp(16px,1.6vw,20px);line-height:1.55}
+.hero-model-media{position:relative;min-height:520px;grid-column:2;grid-row:1;overflow:hidden}
+.hero-model-media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#17291f 0%,rgba(23,41,31,.12) 35%,rgba(0,0,0,.02) 100%);pointer-events:none}
+.hero-model-media img{width:100%;height:100%;min-height:520px;object-fit:cover;object-position:center 32%;display:block}
+.hero-benefits{display:flex;gap:22px;flex-wrap:wrap;margin:24px 0 26px}
+.hero-benefits span{font-size:22px;color:#d9b46b;display:flex;align-items:center;gap:8px}
+.hero-benefits small{font-size:11px;line-height:1.35;color:#f7f2e8;display:block}
+.button-gold{background:#c9a15c;color:#17251d;border:1px solid #c9a15c;font-weight:700}
+.button-gold:hover{background:#e0bf80}
+.model-disclosure{position:absolute;z-index:2;bottom:18px;right:18px;max-width:285px;padding:12px 14px;background:rgba(15,27,21,.84);border:1px solid rgba(229,205,160,.55);color:#fff;font-size:11px;line-height:1.5;border-radius:3px}
+.product-grid{align-items:stretch}
+.product-card{overflow:hidden}
+.product-image{aspect-ratio:1.1/1;overflow:hidden}
+.product-image img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.product-image:hover img{transform:scale(1.025)}
+.inspiration-section{display:grid;grid-template-columns:minmax(230px,.7fr) minmax(0,1.5fr);gap:32px;align-items:center;padding:clamp(34px,5vw,68px) clamp(18px,4vw,58px);background:#f0ece2}
+.inspiration-copy h2{font-family:'Playfair Display',serif;font-size:clamp(34px,4vw,52px);line-height:1.05;margin:10px 0 16px;color:#17291f}
+.inspiration-copy h2 em{font-weight:500}
+.inspiration-copy p:not(.eyebrow){font-size:15px;line-height:1.65;color:#5f625a;max-width:360px}
+.inspiration-copy .inspiration-disclaimer{font-size:12px!important;border-left:2px solid #c7a15f;padding-left:12px;color:#3d443c!important}
+.inspiration-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;align-items:stretch}
+.inspiration-gallery figure{margin:0;min-width:0;background:#fff}
+.inspiration-gallery img{width:100%;height:clamp(190px,24vw,320px);object-fit:cover;object-position:center top;display:block}
+.inspiration-gallery figcaption{padding:10px 8px;font-size:11px;text-align:center;color:#3d453e}
+.benefit-rail{background:#faf8f2}
+@media(max-width:760px){
+ .announcement{font-size:9px;gap:8px;padding:9px 6px;letter-spacing:0}
+ .announcement i{height:11px}
+ .site-header{min-height:68px;padding:12px 16px;gap:10px;flex-wrap:wrap}
+ .wordmark span{font-size:19px}.wordmark small{font-size:8px;letter-spacing:.11em}
+ .header-link{display:none}
+ .menu-toggle{font-size:14px;padding:8px 10px}
+ .hero-lifestyle{display:flex;flex-direction:column;min-height:0}
+ .hero-lifestyle .hero-copy{padding:30px 22px 22px;margin:0;background:#17291f}
+ .hero-lifestyle h1{font-size:clamp(43px,12vw,60px);margin:13px 0}
+ .hero-lifestyle .hero-description{font-size:16px;max-width:350px}
+ .hero-benefits{gap:14px;margin:20px 0;justify-content:space-between}
+ .hero-benefits span{font-size:19px;gap:5px}.hero-benefits small{font-size:10px}
+ .hero-model-media{grid-column:auto;grid-row:auto;min-height:0;height:360px;order:2}
+ .hero-model-media img{min-height:0;height:100%;object-position:center 30%}
+ .hero-model-media:after{background:linear-gradient(0deg,rgba(15,27,21,.5),transparent 50%)}
+ .model-disclosure{right:10px;bottom:10px;max-width:245px;font-size:10px;padding:9px 10px}
+ .product-grid{grid-template-columns:1fr!important;gap:22px}
+ .product-card{display:block}
+ .product-image{aspect-ratio:1.15/1}
+ .inspiration-section{grid-template-columns:1fr;gap:22px;padding:34px 18px}
+ .inspiration-copy h2{font-size:39px}
+ .inspiration-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .inspiration-gallery img{height:260px}
+ .inspiration-gallery figcaption{font-size:11px}
+}
+@media(max-width:390px){
+ .announcement span:last-child{display:none}
+ .hero-benefits{gap:9px}
+ .hero-benefits small{font-size:9px}
+ .hero-model-media{height:315px}
+ .inspiration-gallery img{height:220px}
+}
+
+
+/* V4 HERO FIX: one full-bleed image with copy layered on the image */
+.hero-fullbleed{position:relative;display:flex;align-items:center;justify-content:flex-start;max-width:none;width:100%;min-height:clamp(560px,68vw,760px);padding:clamp(34px,7vw,100px) max(22px,calc((100vw - 1320px)/2));margin:0;overflow:hidden;background:#17291f;color:#fff;isolation:isolate}
+.hero-fullbleed .hero-background{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%;z-index:-2}
+.hero-fullbleed .hero-overlay{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(12,27,20,.94) 0%,rgba(12,27,20,.82) 31%,rgba(12,27,20,.42) 54%,rgba(12,27,20,.04) 100%)}
+.hero-fullbleed .hero-copy{width:min(610px,58%);padding:0;margin:0;background:none;align-self:center;z-index:1}
+.hero-fullbleed .eyebrow{color:#e2c17f;font-size:11px;letter-spacing:.18em;margin-bottom:22px}
+.hero-fullbleed h1{font-size:clamp(54px,7vw,96px);line-height:.98;color:#fff;margin:0 0 22px;letter-spacing:-.055em}
+.hero-fullbleed h1 em{color:#e0d8c4}
+.hero-fullbleed .hero-description{color:#f5f2e9;max-width:490px;font-size:clamp(16px,1.55vw,21px);line-height:1.65;margin-bottom:26px}
+.hero-fullbleed .hero-benefits{display:flex;gap:18px 24px;flex-wrap:wrap;margin:25px 0 30px}
+.hero-fullbleed .hero-benefits span{display:flex;align-items:center;gap:8px;color:#e2c17f;font-size:20px}
+.hero-fullbleed .hero-benefits small{font-size:11px;line-height:1.4;color:#fff;max-width:110px}
+.hero-fullbleed .button-gold{background:#d5ad68;color:#17231f;border:1px solid #d5ad68;min-height:54px;padding:0 27px}
+.hero-fullbleed .button-gold:hover{background:#e4c48a;border-color:#e4c48a}
+.hero-fullbleed .model-disclosure{position:absolute;right:max(22px,calc((100vw - 1320px)/2));bottom:22px;max-width:300px;padding:11px 14px;background:rgba(15,28,21,.78);border:1px solid rgba(255,255,255,.25);border-radius:3px;color:#fff;font-size:10px;line-height:1.55;z-index:2}
+@media(max-width:650px){.hero-fullbleed{min-height:690px;padding:34px 20px 90px;align-items:flex-start}.hero-fullbleed .hero-background{object-position:62% center}.hero-fullbleed .hero-overlay{background:linear-gradient(180deg,rgba(12,27,20,.82) 0%,rgba(12,27,20,.62) 46%,rgba(12,27,20,.2) 100%)}.hero-fullbleed .hero-copy{width:100%;max-width:520px;padding-top:8px}.hero-fullbleed h1{font-size:clamp(46px,12vw,64px);max-width:420px;margin-bottom:18px}.hero-fullbleed .eyebrow{font-size:9px;margin-bottom:16px}.hero-fullbleed .hero-description{font-size:15px;line-height:1.55;max-width:330px;margin-bottom:19px}.hero-fullbleed .hero-benefits{gap:12px 14px;margin:20px 0 23px;max-width:350px}.hero-fullbleed .hero-benefits span{font-size:17px;gap:6px}.hero-fullbleed .hero-benefits small{font-size:10px}.hero-fullbleed .model-disclosure{right:14px;left:14px;bottom:12px;max-width:none;font-size:10px;padding:9px 11px}.hero-fullbleed .button-gold{min-height:49px}}
