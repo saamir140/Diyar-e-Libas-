@@ -15,3 +15,7 @@ Open `index.html` in a browser. Keep the `assets`, `css`, and `js` folders along
 - Supplier fabric images and temporary sample labels remain unverified; confirm colour names and stock before launch.
 - This is a static front-end prototype. Checkout, order recording, courier integration, live stock, and Meta Pixel are not connected in this package.
 - Verify all delivery, quality, and return claims before publishing them as guaranteed benefits.
+
+
+## Product gallery update (V2)
+Both product detail pages now keep colour selection on the right and show a responsive four-view gallery on the left. Selecting a shade updates the supplier-photo view and its close/detail framings. The styling inspiration image is illustrative and is explicitly not shade-accurate; do not treat it as a product photo. Supplier-confirmed shade names and product specifications remain pending.
