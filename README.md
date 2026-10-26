@@ -19,3 +19,15 @@ Open `index.html` in a browser. Keep the `assets`, `css`, and `js` folders along
 
 ## Product gallery update (V2)
 Both product detail pages now keep colour selection on the right and show a responsive four-view gallery on the left. Selecting a shade updates the supplier-photo view and its close/detail framings. The styling inspiration image is illustrative and is explicitly not shade-accurate; do not treat it as a product photo. Supplier-confirmed shade names and product specifications remain pending.
+
+
+## CRO product page additions (V4)
+- Added clear product expectations, selected-shade summary, decision reassurance, and objection-handling FAQs to both product pages.
+- Claims remain conservative: no invented reviews, stock, shipping times, fabric length/composition, or guaranteed returns.
+- Checkout and order recording remain disconnected; confirm supplier details and final policies before launch.
+
+
+## CRO Product Pages V5
+- Added structured product decision flow: product clarity, shade selection guidance, verified-vs-pending information, suitability cues, risk-reduction checklist, FAQ objection handling, and Order Now CTA.
+- The Order Now CTA is a prototype interaction only; no order is submitted or recorded.
+- Replace all pending supplier details with verified information before launch. Do not add fake reviews, ratings, scarcity, delivery promises, or guarantees.
