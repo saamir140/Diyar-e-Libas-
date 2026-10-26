@@ -1,15 +1,17 @@
-# Diyar-e-Libas website prototype — single product with colour variants
+# Diyar-e-Libas — Homepage Layout V3
 
-## Structure
-- `index.html` — homepage
-- `wash-wear.html` — Wash & Wear category page
-- `wash-wear-product.html` — one Wash & Wear product page with 8 supplier photo shade options
-- `legend-winter-cotton.html` — Legend Winter Cotton category page
-- `legend-winter-cotton-product.html` — one Legend Winter Cotton product page with 7 supplier photo shade options
-- `css/style.css`, `js/main.js`, `assets/products/` — styles, interactions and supplied photos
+This package refreshes the homepage around the requested customer journey:
+1. Benefit-led announcement bar and clear navigation.
+2. Large lifestyle hero with headline, subheadline, collection CTA, and explicit stitched-look/unstitched-fabric disclosure.
+3. Two collection cards: Wash & Wear (Rs. 4,000) and Legend Winter Cotton (Rs. 3,350).
+4. Styling inspiration gallery with clear disclosure that model outfits are examples only and stitching is not included.
+5. Existing fabric guide, comparison, product clarity, and delivery/returns sections.
 
-## Important
-Shade numbers are temporary photo labels, not official colour names or stock SKUs. Technical details such as fabric length/composition, delivery charges, stock, and return terms must be confirmed before launch. Checkout, order submission and order recording are not connected in this prototype.
+## Open locally
+Open `index.html` in a browser. Keep the `assets`, `css`, and `js` folders alongside the HTML files.
 
-
-Mobile UX Fix V2: improved mobile header sizing, stronger category hierarchy, full-width square product imagery, removed oversized card borders, single-column product card layout on phones, and clearer category copy. Supplier shade names remain provisional pending confirmation.
+## Important launch notes
+- The model/lifestyle images are visual styling inspiration and are not photographs of the delivered fabric or actual products.
+- Supplier fabric images and temporary sample labels remain unverified; confirm colour names and stock before launch.
+- This is a static front-end prototype. Checkout, order recording, courier integration, live stock, and Meta Pixel are not connected in this package.
+- Verify all delivery, quality, and return claims before publishing them as guaranteed benefits.
