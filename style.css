@@ -1347,3 +1347,58 @@ body{margin:0}
   .legend-category-page .category-hero-copy h1 { font-size: clamp(36px, 10vw, 48px); }
   .legend-category-page .category-hero-copy .button { width: 100%; justify-content: center; }
 }
+
+/* Legend category refinement: smaller headline and shade selector above Buy Now */
+.legend-category-page .category-hero-copy h1 {
+  font-size: clamp(38px, 5.2vw, 68px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -.045em !important;
+  margin-bottom: 18px !important;
+}
+.legend-category-page .category-hero-copy .hero-shade-picker {
+  margin: 18px 0 14px;
+  max-width: 760px;
+}
+.legend-category-page .hero-shade-picker h2 {
+  font: 600 15px/1.4 'DM Sans', sans-serif;
+  color: #202823;
+  margin: 0 0 10px;
+}
+.legend-category-page .hero-shade-picker .category-variants {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 0 0 8px;
+}
+.legend-category-page .hero-shade-picker .product-sample-option {
+  width: clamp(52px, 6vw, 68px) !important;
+  flex: 0 0 auto;
+  padding: 0 !important;
+  border: 1px solid #d8d4c8 !important;
+  background: transparent !important;
+  border-radius: 9px;
+  overflow: hidden;
+}
+.legend-category-page .hero-shade-picker .product-sample-option img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.legend-category-page .hero-shade-picker .product-sample-option span {
+  display: block;
+  padding: 5px 2px;
+  font-size: 9px;
+  line-height: 1.2;
+}
+.legend-category-page .hero-shade-picker .product-sample-option.active {
+  outline: 2px solid #b78b4a;
+  outline-offset: 2px;
+}
+.legend-category-page .hero-shade-picker .variant-help { font-size: 12px; margin: 7px 0 0; }
+.legend-category-page .category-hero-copy .button { margin-top: 8px; }
+@media (max-width: 620px) {
+  .legend-category-page .category-hero-copy h1 { font-size: clamp(34px, 8.5vw, 42px) !important; line-height: 1.04 !important; }
+  .legend-category-page .hero-shade-picker .product-sample-option { width: clamp(48px, 15vw, 62px) !important; }
+  .legend-category-page .category-hero-copy .button { width: 100%; justify-content: center; }
+}
