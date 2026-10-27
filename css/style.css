@@ -1300,3 +1300,111 @@ body{margin:0}
  .gallery-purpose small{font-size:9px!important}
  .product-cro-flow{margin-top:18px!important}
 }
+
+/* Legend Winter Cotton — compact circular shade picker */
+.legend-category-page .category-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.legend-category-page .category-hero-media img {
+  width: 100%;
+  height: min(68vh, 560px);
+  object-fit: contain;
+}
+
+.legend-category-page .category-hero-copy h1 {
+  font-size: clamp(25px, 2.5vw, 36px) !important;
+  line-height: 1.12 !important;
+  margin: 8px 0 12px !important;
+}
+
+.legend-category-page .category-hero-copy > p:not(.eyebrow) {
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+  margin: 8px 0 !important;
+}
+
+.legend-category-page .hero-shade-picker {
+  margin: 12px 0 !important;
+}
+
+.legend-category-page .hero-shade-picker h2 {
+  font-size: 13px !important;
+  margin: 0 0 8px !important;
+}
+
+.legend-category-page .category-variants {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 8px !important;
+}
+
+.legend-category-page .category-variants .product-sample-option {
+  width: 42px !important;
+  min-width: 42px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.legend-category-page .category-variants .product-sample-option img {
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  border: 1px solid #d1c6ad !important;
+}
+
+.legend-category-page .category-variants .product-sample-option.active img {
+  outline: 2px solid #a88a50;
+  outline-offset: 2px;
+}
+
+.legend-category-page .category-variants .product-sample-option span {
+  font-size: 9px !important;
+  line-height: 1.2 !important;
+}
+
+.legend-category-page .variant-help {
+  font-size: 10px !important;
+  margin: 8px 0 !important;
+}
+
+.legend-category-page .category-hero-copy .button {
+  min-height: 40px !important;
+  padding: 10px 20px !important;
+  font-size: 12px !important;
+}
+
+@media (max-width: 700px) {
+  .legend-category-page .category-hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .legend-category-page .category-hero-media img {
+    height: 260px;
+    max-height: 38vh;
+  }
+
+  .legend-category-page .category-hero-copy h1 {
+    font-size: 25px !important;
+  }
+
+  .legend-category-page .category-hero-copy > p:not(.eyebrow) {
+    font-size: 12px !important;
+  }
+
+  .legend-category-page .category-variants {
+    gap: 7px !important;
+  }
+}
+
