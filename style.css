@@ -1300,3 +1300,50 @@ body{margin:0}
  .gallery-purpose small{font-size:9px!important}
  .product-cro-flow{margin-top:18px!important}
 }
+
+
+/* Legend category hero: image first, then copy and buy CTA */
+.legend-category-page .category-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(24px, 3vw, 38px);
+  padding: clamp(24px, 4vw, 52px) max(20px, calc((100% - 1280px)/2));
+}
+.legend-category-page .category-hero-media {
+  order: 0;
+  width: min(100%, 900px);
+  max-width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.legend-category-page .category-hero-media img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #e8e5dc;
+}
+.legend-category-page .category-hero-copy {
+  order: 1;
+  width: min(100%, 900px);
+  max-width: 100%;
+}
+.legend-category-page .category-hero-copy h1 {
+  max-width: 100%;
+  margin-top: 14px;
+}
+.legend-category-page .category-hero-copy p:not(.eyebrow) {
+  max-width: 760px;
+}
+.legend-category-page .category-hero-copy .button {
+  margin-top: 8px;
+  min-width: 220px;
+}
+@media (max-width: 620px) {
+  .legend-category-page .category-hero { padding: 20px 16px 30px; gap: 20px; }
+  .legend-category-page .category-hero-media { width: 100%; padding: 6px; }
+  .legend-category-page .category-hero-media img { aspect-ratio: 4 / 3; object-fit: contain; }
+  .legend-category-page .category-hero-copy { width: 100%; }
+  .legend-category-page .category-hero-copy h1 { font-size: clamp(36px, 10vw, 48px); }
+  .legend-category-page .category-hero-copy .button { width: 100%; justify-content: center; }
+}
