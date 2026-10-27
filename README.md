@@ -31,3 +31,6 @@ Both product detail pages now keep colour selection on the right and show a resp
 - Added structured product decision flow: product clarity, shade selection guidance, verified-vs-pending information, suitability cues, risk-reduction checklist, FAQ objection handling, and Order Now CTA.
 - The Order Now CTA is a prototype interaction only; no order is submitted or recorded.
 - Replace all pending supplier details with verified information before launch. Do not add fake reviews, ratings, scarcity, delivery promises, or guarantees.
+
+
+V9 mobile polish: refined hero crop/positioning, smaller mobile text, 3-column benefit rail, rounded controls/cards, and softer borders. Preview on real devices before launch.
