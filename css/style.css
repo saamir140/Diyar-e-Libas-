@@ -602,3 +602,117 @@ body{color:#202720;background:#fbfaf6}
   .product-title-row h3 { font-size: 23px; }
   .product-title-row strong { font-size: 14px; }
 }
+
+/* V7 MOBILE HERO REBUILD — keep the person visible and the message separate */
+@media (max-width: 650px) {
+  .hero-fullbleed.hero-lifestyle {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 0 !important;
+    gap: 0 !important;
+    overflow: hidden !important;
+    background: #17291f !important;
+  }
+  .hero-fullbleed .hero-background {
+    position: relative !important;
+    inset: auto !important;
+    display: block !important;
+    width: 100% !important;
+    height: clamp(245px, 68vw, 330px) !important;
+    min-height: 0 !important;
+    max-height: 330px !important;
+    object-fit: cover !important;
+    object-position: 68% 30% !important;
+    z-index: 0 !important;
+  }
+  .hero-fullbleed .hero-overlay { display: none !important; }
+  .hero-fullbleed .hero-copy {
+    position: relative !important;
+    width: 100% !important;
+    max-width: none !important;
+    padding: 24px 20px 25px !important;
+    margin: 0 !important;
+    align-self: auto !important;
+    background: #17291f !important;
+    z-index: 1 !important;
+  }
+  .hero-fullbleed .eyebrow {
+    font-size: 9px !important;
+    line-height: 1.4 !important;
+    letter-spacing: .14em !important;
+    margin: 0 0 11px !important;
+  }
+  .hero-fullbleed h1 {
+    font-size: clamp(34px, 8.5vw, 43px) !important;
+    line-height: 1.04 !important;
+    letter-spacing: -.045em !important;
+    margin: 0 0 14px !important;
+    max-width: 100% !important;
+    overflow-wrap: normal !important;
+  }
+  .hero-fullbleed h1 em { display: inline; }
+  .hero-fullbleed .hero-description {
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+    max-width: 100% !important;
+    margin: 0 0 17px !important;
+    color: #f1eee6 !important;
+  }
+  .hero-fullbleed .hero-benefits {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px 10px !important;
+    margin: 16px 0 19px !important;
+  }
+  .hero-fullbleed .hero-benefits span {
+    font-size: 17px !important;
+    min-width: 0 !important;
+    gap: 7px !important;
+    align-items: flex-start !important;
+  }
+  .hero-fullbleed .hero-benefits small {
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+    max-width: none !important;
+    color: #f8f5ed !important;
+  }
+  .hero-fullbleed .button-gold {
+    width: 100% !important;
+    min-height: 48px !important;
+    font-size: 12px !important;
+    padding: 0 18px !important;
+  }
+  .hero-fullbleed .model-disclosure {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: none !important;
+    border: 0 !important;
+    border-top: 1px solid rgba(229,205,160,.28) !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 12px 20px 14px !important;
+    background: #20372b !important;
+    color: #f6f2e8 !important;
+    font-size: 11px !important;
+    line-height: 1.5 !important;
+    z-index: 1 !important;
+  }
+  .benefit-rail { background: #f1f0e9 !important; }
+  .benefit-rail strong { color: #17231f !important; font-size: 12px !important; }
+  .benefit-rail small { color: #525b54 !important; font-size: 11px !important; }
+  .benefit-rail .rail-icon { color: #17291f !important; border-color: #aeb7a8 !important; }
+  .section-heading h2, .guide-intro h2 { font-size: clamp(31px, 8vw, 38px) !important; line-height: 1.08 !important; }
+  .section-intro, .product-description { color: #525b54 !important; }
+}
+@media (max-width: 390px) {
+  .hero-fullbleed .hero-background { height: 245px !important; }
+  .hero-fullbleed .hero-copy { padding: 21px 17px 22px !important; }
+  .hero-fullbleed h1 { font-size: 34px !important; }
+  .hero-fullbleed .hero-description { font-size: 13px !important; }
+  .hero-fullbleed .model-disclosure { padding-left: 17px !important; padding-right: 17px !important; }
+}
