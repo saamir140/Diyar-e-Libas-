@@ -9,7 +9,7 @@
 <button class="gallery-purpose active" type="button" data-view="fabric"><span class="purpose-image"><img src="assets/products/collection2_01.webp" alt="" id="gallery-fabric-img"></span><strong>Fabric view</strong><small>Original supplier photo</small></button>
 <button class="gallery-purpose" type="button" data-view="detail"><span class="purpose-image purpose-zoom"><img src="assets/products/collection2_01.webp" alt="" id="gallery-detail-img"></span><strong>Detail view</strong><small>Closer look at the supplied photo</small></button>
 <button class="gallery-purpose" type="button" data-view="presentation"><span class="purpose-image purpose-present"><img src="assets/products/collection2_01.webp" alt="" id="gallery-presentation-img"></span><strong>Presentation view</strong><small>Same shade, alternate framing</small></button>
-<button class="gallery-purpose" type="button" data-view="styling"><span class="purpose-image purpose-styling"><img src="assets/style-model-1.jpg" alt="Styled outfit inspiration, not a shade-accurate product image"></span><strong>Styling inspiration</strong><small>Separate styling reference</small></button>
+<button class="gallery-purpose" type="button" data-view="styling"><span class="purpose-image purpose-styling"><img src="assets/products/collection1_01.webp" alt="Styled outfit inspiration, not a shade-accurate product image"></span><strong>Styling inspiration</strong><small>Separate styling reference</small></button>
 </div>
 <div class="product-side-guide">
   <p class="product-side-eyebrow">BEFORE YOU ORDER</p>
@@ -18,7 +18,7 @@
   <div class="product-side-point"><span>01</span><div><strong>Fabric, not a stitched suit</strong><p>This listing is for unstitched fabric. Stitching and tailoring are not included.</p></div></div>
   <div class="product-side-point"><span>02</span><div><strong>Choose your preferred shade</strong><p>Use the seven supplier-photo options and confirm the exact colour before ordering.</p></div></div>
   <div class="product-side-point"><span>03</span><div><strong>Confirm the details first</strong><p>Fabric length, composition, availability and delivery charges still need confirmation.</p></div></div>
-  <div class="product-side-reminder"><strong>Displayed price: Rs. 3,999</strong><span>Online checkout is not connected in this prototype.</span></div>
+  <div class="product-side-reminder"><strong>Displayed price: Rs. 3,350</strong><span>Online checkout is not connected in this prototype.</span></div>
 </div>
 </div>
 <div class="product-info"><p class="product-kicker">Legend Winter Cotton · UNSTITCHED FABRIC</p><h1>Legend Winter Cotton</h1><p class="product-price">Rs. 3,350</p><p class="product-intro">Find your shade first. Choose a colour to update the gallery, then explore the supplied fabric photography before you decide.</p><div class="product-facts"><span class="product-fact">Unstitched fabric</span><span class="product-fact">Cash on Delivery planned</span><span class="product-fact">7 photo shades</span></div>
@@ -74,7 +74,7 @@ function chooseGalleryView(button){
  document.querySelectorAll('.gallery-purpose').forEach(el=>el.classList.toggle('active',el===button));
  const view=button.dataset.view; const main=document.getElementById('product-main-image');
  const label=document.getElementById('gallery-view-label'); label.textContent=galleryViews[view].label;
- if(view==='styling'){main.src='assets/style-model-1.jpg';main.alt='General styling inspiration; not an exact representation of the selected fabric shade';}
+ if(view==='styling'){main.src='assets/products/collection1_01.webp';main.alt='General styling inspiration; not an exact representation of the selected fabric shade';}
  else {main.src=currentShade;main.alt='Legend Winter Cotton selected shade supplier photo';}
  main.classList.toggle('main-zoom',view==='detail'); main.classList.toggle('main-present',view==='presentation');
 }
